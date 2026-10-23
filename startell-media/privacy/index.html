@@ -5,9 +5,9 @@
 body{background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0;padding:32px 20px 64px}
 main{max-width:720px;margin:0 auto} h1{font-size:32px;line-height:1.15;margin:0 0 8px} h2{font-size:20px;margin:34px 0 8px;color:var(--gold)}
 p,li{color:var(--mute)} a{color:var(--gold)} hr{border:0;border-top:1px solid var(--line);margin:32px 0}</style></head><body><main>
-<h1>Privacy policy</h1><p>Startell Media app · last updated 20 October 2026 (ML Kit diagnostics)</p>
+<h1>Privacy policy</h1><p>Startell Media app · last updated 23 October 2026 (training partners, duels and duets)</p>
 <h2>The short version</h2>
-<p>Startell Media is made to work on your phone. Your videos, your voice, your post numbers, your deals and your contracts stay on your device. We have no account system and no ads, and we add no analytics tools of our own.</p>
+<p>Startell Media is made to work on your phone. Your videos, your voice, your post numbers, your deals and your contracts stay on your device. If you turn on Training partners, your nickname and your training numbers are kept on our server so the friends you invite can see them. We have no ads, and we add no analytics tools of our own.</p>
 <h2>What stays on your phone</h2>
 <ul>
 <li><b>Videos you record.</b> The camera and microphone are used only while you film. Clips and finished videos are kept in the app's storage on your phone, and saved to your photo library only when you tap Save.</li>
@@ -17,17 +17,25 @@ p,li{color:var(--mute)} a{color:var(--gold)} hr{border:0;border-top:1px solid va
 <li><b>Post numbers.</b> Screenshots you pick are read on the phone (Google ML Kit on Android, Apple Vision on iPhone). The pictures are not uploaded; only the numbers you save are kept.</li>
 <li><b>Deals, contracts and your media kit.</b> Contract text is checked on the phone. Nothing is sent to us.</li>
 <li><b>Circles.</b> Invites and clips travel through the apps you choose to share with (for example WhatsApp or email). We do not receive them.</li>
+<li><b>Duets.</b> The app downloads a list of free clips, and the clip you choose, from our website (npcodingrepos.github.io, hosted by GitHub). Your reply is filmed and joined to the clip on your phone, and saved only when you tap Save. Nothing is uploaded.</li>
 </ul>
+<h2>Training partners and duels (optional)</h2>
+<p>Training partners is off until you turn it on. When you do, the app creates an anonymous account (a random ID, with no email or phone number) and keeps a card on our server (Google Firebase, Cloud Firestore). The card holds your nickname, your STAR score and level, your six skill scores, your medal counts and number of mastered drills, your streak, and your points for the current week. Only people who have your invite link can open your card; there is no search and no public list. Your list of partners and the people you blocked stay on your phone.</p>
+<p>In a duel, the person who starts it and the person who answers share their nickname, their score for the drill and its eight signal scores. Duels are deleted from the server 14 days after they start. Videos are never sent: each person's take is scored on their own phone.</p>
+<p>If you report a partner, the app opens an email to us with their nickname and card code. We use it only to look into the report.</p>
+<p>To delete your data, open Training partners and tap <b>Turn off training partners</b>. This deletes your card, the duels you started and your anonymous account from the server. Cards that are not updated for 180 days are deleted automatically. You can also email <a href="mailto:support@startell.com">support@startell.com</a>.</p>
 <h2>Diagnostics from Google ML Kit (Android)</h2>
 <p>On Android, face detection and text reading use Google ML Kit, which runs on the phone. ML Kit sends Google anonymous diagnostics about its own use: device model and Android version, the app's package name and version, a per-installation identifier that is not meant to identify you, speed and error codes. It does not send your pictures, videos or text. Google uses this to keep ML Kit working and does not pass it to third parties. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit's data disclosure</a>.</p>
 <h2>The speech model download</h2>
 <p>The first time you score a take, the app downloads the speech model (about 57 MB) once from Hugging Face (huggingface.co), a public file host. Like any website, Hugging Face sees your device's IP address and the file request. No video, audio or text of yours is sent. See <a href="https://huggingface.co/privacy">Hugging Face's privacy policy</a>.</p>
 <h2>Subscriptions</h2>
 <p>Purchases are handled by Google Play or the App Store. We use RevenueCat to check which plan is active. RevenueCat receives a random app user id and the store's purchase records (product, dates, price, country). It does not receive your videos, your name or your contacts. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
+<h2>Who we work with</h2>
+<ul><li><b>Google Firebase</b> (Authentication and Cloud Firestore) stores the Training partners cards and duels, only if you turn the feature on. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</li><li><b>RevenueCat</b> checks which plan is active (above).</li><li><b>Hugging Face</b> and <b>GitHub</b> host files the app downloads (the speech model, the duet clips). They see your IP address, like any website.</li></ul>
 <h2>What we do not do</h2>
 <ul><li>We do not sell or share personal data.</li><li>We do not track you across apps or websites.</li><li>We do not show ads.</li></ul>
 <h2>Deleting your data</h2>
-<p>Everything the app keeps is on your phone. Delete it by removing the app, or in your phone's settings clear the app's storage. To ask about purchase records held by RevenueCat, email us and we will delete them.</p>
+<p>Everything the app keeps is on your phone, unless you turned on Training partners. Delete what is on your phone by removing the app, or in your phone's settings clear the app's storage. To delete your training partner card, your duels and your anonymous account, open Training partners and tap Turn off training partners (or email us). To ask about purchase records held by RevenueCat, email us and we will delete them.</p>
 <h2>Children</h2>
 <p>The app is for people aged 13 and over. See our <a href="../child-safety/">child safety standards</a>.</p>
 <h2>Changes and contact</h2>
