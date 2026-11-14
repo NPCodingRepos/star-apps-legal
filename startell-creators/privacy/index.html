@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy policy – Startell Creators</title>
+<style>:root{--bg:#0B0B10;--fg:#F6F3EE;--mute:rgba(246,243,238,.72);--gold:#EAA62C;--line:rgba(255,255,255,.12)}
+@media (prefers-color-scheme:light){:root{--bg:#FBF8F2;--fg:#1B1712;--mute:rgba(27,23,18,.72);--gold:#9A5E0E;--line:rgba(0,0,0,.14)}}
+body{background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0;padding:32px 20px 64px}
+main{max-width:720px;margin:0 auto} h1{font-size:32px;line-height:1.15;margin:0 0 8px} h2{font-size:20px;margin:34px 0 8px;color:var(--gold)}
+p,li{color:var(--mute)} a{color:var(--gold)} hr{border:0;border-top:1px solid var(--line);margin:32px 0}</style></head><body><main>
+<h1>Privacy policy</h1><p>Startell Creators (WooCommerce plugin, Shopify app and the Stores tab in the Startell Media app) · last updated 14 November 2026</p>
+<h2>The short version</h2>
+<p>Startell never holds or transfers money; stores pay creators directly, and we only track and report. From a store we receive only orders that came through a creator, and never the buyer's email, name, address or products: for the buyer's email we receive only a one-way hash, used to spot creators buying through their own link. When someone clicks a creator's link, we do not collect their IP address or browser data. A creator's contact email is shared only with the stores they apply to. We have no ads and do not sell personal data.</p>
+<h2>What we receive from a store</h2>
+<ul>
+<li><b>When the store connects</b> (WooCommerce plugin): the site URL, store name, admin email address, store currency, locale and country, and the WooCommerce and plugin versions. We answer with a store id and a secret that stay on the store's site. We then call a public address on the site once to check that the site is the store's own. For Shopify, the app signs in through Shopify and we keep the shop address and the access Shopify gives the app.</li>
+<li><b>When the store uses the admin screen</b>: the settings and actions it submits (reward, discount, which creators are approved or removed, payouts marked as paid), signed with the store's secret.</li>
+<li><b>When a visitor opens a creator's link</b>: only the creator's link name. We keep a daily count of clicks per link. We do not collect or keep the visitor's IP address or browser data, and our function's request logs are switched off.</li>
+<li><b>When an order that came through a creator's link or coupon is paid, refunded or cancelled</b>: the order id and number, currency, the order amount without shipping and tax, the refunded amount, the creator's link name, the coupon code, the order date, and a one-way SHA-256 hash of the billing email address. Billing emails, names, addresses and products are never sent to us. Orders that did not come through a creator are never sent. On Shopify, order events are delivered to our service by Shopify and we keep only the same fields.</li>
+<li><b>Once a day</b> (WooCommerce): the plugin asks us for store credit that creators have earned and confirms each credit it has issued. For this the store receives the creators' contact emails, which the creators gave when they applied to that store.</li>
+<li><b>When the plugin or app is removed</b>: a notice that the store has uninstalled. Shopify also sends us its standard data request and erase notices, and we handle them.</li>
+</ul>
+<h2>What we receive from creators</h2>
+<ul>
+<li><b>Profile</b>: handle, display name, picture, short bio, country and city, languages, niches, social handles, and your total followers as you state them. We also keep which plan you have in Startell Media, read from the subscription service (RevenueCat), to apply any limits.</li>
+<li><b>Applications</b>: your message to the store, your contact email, and for cash rewards a short note on how you want to be paid. The contact email and the payment note are shown only to the store you applied to. A copy of your profile is saved with each application.</li>
+<li><b>Earnings</b>: for each store, your link, code, visits, orders, rewards and what has been paid.</li>
+<li><b>Sign-in</b>: you sign in anonymously through the Startell Media app (Firebase Authentication). There is no email or phone sign-up; your account is a random ID.</li>
+<li>If you invite a store owner, we keep the store address you typed and how many times the invite was opened. We never send the invite ourselves; you share it.</li>
+</ul>
+<h2>What stores see about creators, and creators about stores</h2>
+<p>A store sees the profile and message of creators who applied to it, their contact email, and the visits, orders and rewards of its own creators. Creators browsing the Stores tab see only stores that have turned the program on and are active: name, logo, country, category, reward and buyer discount, and how many creators it works with. A creator never sees a store's admin email or secret, and a store never sees other stores' data.</p>
+<h2>Cookies</h2>
+<p>When a visitor arrives through a creator's link, a first-party cookie <code>sc_ref</code> is set on the store's own domain for 30 days. It stores the creator's link name so that the order can be credited. On Shopify the same name is kept in the visitor's browser storage for 30 days and added to the cart. We set no cookies of our own. Stores should mention it in their cookie notice where the law requires.</p>
+<h2>Where the data is kept, and who we work with</h2>
+<ul>
+<li><b>Google Cloud and Firebase</b> (Cloud Functions, Cloud Firestore, Authentication), in the europe-west1 region, hold everything above. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</li>
+<li><b>RevenueCat</b> tells us which Startell Media plan a creator has. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</li>
+<li><b>Shopify</b> or <b>WordPress/WooCommerce</b>, the platform a store runs on, passes the store's data to us as described above.</li>
+<li>Currency conversion uses public daily exchange rates; no personal data is sent.</li>
+</ul>
+<h2>Money</h2>
+<p>We do not take payments from buyers and do not pay creators. Store credit is issued by the store's own platform, and cash is paid by the store directly to the creator. We store the amounts so that both sides can see them. Any fee for stores is shown in the admin screen before it applies; currently the service is free.</p>
+<h2>What we do not do</h2>
+<ul><li>We do not sell or share personal data.</li><li>We do not track visitors across websites, and we collect no IP address or browser data on link clicks.</li><li>We do not show ads.</li></ul>
+<h2>Deleting your data</h2>
+<ul>
+<li><b>Stores.</b> Uninstalling the plugin or the app notifies the service and switches off your links and codes. To have your store's data deleted, email <a href="mailto:support@startell.com?subject=Delete%20my%20Startell%20Creators%20data">support@startell.com</a> from the admin email of the store, with your store address.</li>
+<li><b>Creators.</b> Email <a href="mailto:support@startell.com?subject=Delete%20my%20Startell%20Creators%20data">support@startell.com</a> with your handle, or follow the steps on the <a href="../../startell-media/delete/">Startell Media delete page</a>. We delete your profile, applications and links.</li>
+<li>Order and earnings records involve both a store and a creator. A store keeps its own order records in its own platform, which we cannot delete. We do not state a fixed period for how long order records are kept.</li>
+<li>We confirm by email once it is done.</li>
+</ul>
+<h2>Children</h2>
+<p>The service is for people aged 13 and over, and for creators the Startell Media app is also for 13 and over. See our <a href="../../startell-media/child-safety/">child safety standards</a>.</p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be posted here with a new date. Questions: <a href="mailto:support@startell.com">support@startell.com</a>.</p>
+</main></body></html>
